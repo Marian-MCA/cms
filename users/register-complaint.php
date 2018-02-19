@@ -21,7 +21,8 @@ $compfile=$_FILES["compfile"]["name"];
 
 
 
-move_uploaded_file($_FILES["compfile"]["tmp_name"],"complaintdocs/".$_FILES["compfile"]["name"]);
+move_uploaded_file($_FILES["compfile"]["tmp_name"],"../admin/complaintdocs/".$_FILES["compfile"]["name"]);
+move_uploaded_file($_FILES["compfile"]["tmp_name"],"./complaintdocs/".$_FILES["compfile"]["name"]);
 $query=mysql_query("insert into tblcomplaints(userId,category,subcategory,complaintType,state,noc,complaintDetails,complaintFile) values('$uid','$category','$subcat','$complaintype','$state','$noc','$complaintdetials','$compfile')");
 // code for show complaint number
 $sql=mysql_query("select complaintNumber from tblcomplaints  order by complaintNumber desc limit 1");

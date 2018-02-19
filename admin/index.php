@@ -59,7 +59,7 @@ exit();
 				
 					<ul class="nav pull-right">
 
-						<li><a href="../cms/">
+						<li><a href="http://localhost:8088/cms/">
 						Back to Portal
 						
 						</a></li>
@@ -87,12 +87,12 @@ exit();
 						<div class="module-body">
 							<div class="control-group">
 								<div class="controls row-fluid">
-									<input class="span12" type="text" id="inputEmail" name="username" placeholder="Username">
+									<input class="span12" type="text" id="inputEmail" name="username" placeholder="Username" required="">
 								</div>
 							</div>
 							<div class="control-group">
 								<div class="controls row-fluid">
-						<input class="span12" type="password" id="inputPassword" name="password" placeholder="Password">
+						<input class="span12" type="password" id="inputPassword" name="password" placeholder="Password" required="">
 								</div>
 							</div>
 						</div>

@@ -24,7 +24,7 @@ while($row=mysql_fetch_array($get_usr_gmail))
   $user_gmail=$row['userEmail'];
 }
 echo $user_gmail ;
-header("location:../Swift Mailer/register.php?email=".$user_gmail);
+header("location:../Swift Mailer/register.php?email=".$user_gmail."&remark=".$remark);
 
 
 echo "<script>alert('Complaint details updated successfully');</script>";
@@ -46,11 +46,18 @@ window.print();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>User Profile</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="anuj.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link type="text/css" href="css/theme.css" rel="stylesheet">
+<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
+<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
+
 </head>
-<body>
+<body style="background-color: #252831;">
 
 <div style="margin-left:50px;">
  <form name="updateticket" id="updatecomplaint" method="post"> 
@@ -60,14 +67,14 @@ window.print();
       <td >&nbsp;</td>
     </tr>
     <tr height="50">
-      <td><b>Complaint Number</b></td>
+      <td><b style="color: #2af3b2">Complaint Number</b></td>
      
-      <td><?php echo htmlentities($_GET['cid']);  ?></td>
+      <td><?php echo "<h3 style='color: #24b9f5'>".htmlentities($_GET['cid'])."</h3>";  ?></td>
     
     </tr>
     <tr height="50">
-      <td><b>Status</b></td>
-      <td><select name="status" required="required">
+      <td><b style="color: #2af3b2">Status</b></td>
+      <td><select class="form-control" name="status" required="required">
       <option value="">Select Status</option>
       <option value="in process">In Process</option>
     <option value="closed">Closed</option>
@@ -77,15 +84,15 @@ window.print();
 
 
       <tr height="50">
-      <td><b>Remark</b></td>
-      <td><textarea name="remark" cols="50" rows="10" required="required"></textarea></td>
+      <td><b style="color: #2af3b2">Remark</b></td>
+      <td><textarea class="form-control" name="remark" cols="50" rows="10" required="required"></textarea></td>
     </tr>
     
 
 
         <tr height="50">
       <td>&nbsp;</td>
-      <td><input type="submit" name="update" value="Submit"></td>
+      <td><input class="btn-success btn-sm " type="submit" name="update" value="Submit"></td>
     </tr>
 
 
@@ -95,7 +102,7 @@ window.print();
     <tr>
   <td></td>
       <td >   
-      <input name="Submit2" type="submit" class="txtbox4" value="Close this window " onClick="return f2();" style="cursor: pointer;"  /></td>
+      <input class="btn-danger btn-sm" name="Submit2" type="submit" class="txtbox4" value="Close this window " onClick="return f2();" style="cursor: pointer;"  /></td>
     </tr>
    
 

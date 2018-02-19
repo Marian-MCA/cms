@@ -16,7 +16,7 @@ body {
     font-family: 'Ruda', sans-serif;
     padding: 0px !important;
     margin: 0px !important;
-    font-size:13px;
+    font-size:16px;
 }
 
 ul li {
@@ -91,8 +91,8 @@ a, a:hover, a:focus {
 /*Theme Buttons*/
 
 .btn-theme {
-  color: #fff;
-  background-color: #68dff0;
+  color: #3cffc0;
+  background-color: #252831;
   border-color: #48bcb4;
 }
 .btn-theme:hover,
@@ -364,8 +364,8 @@ ul.sidebar-menu li a{
 }
 
 ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
-    background: #68dff0;
-    color: #fff;
+    background: #1fa8dc;
+    color: #ffffff;
     display: block;
 
     -webkit-transition: all 0.3s ease;
@@ -413,7 +413,7 @@ ul.sidebar-menu li a.active i {
 }
 
 .black-bg {
-    background: #ffd777;
+    background: #252831;
     border-bottom: 1px solid #c9aa5f;
 }
 
@@ -1737,6 +1737,7 @@ background: #fffbcc !important;
 .form-panel {
 	background: #ffffff;
 	margin: 10px;
+    border-radius: 10px;
 	padding: 10px;
 	box-shadow: 0px 3px 2px #aab2bd;
 	text-align: left;
@@ -1936,10 +1937,10 @@ label {
 	margin: 0;
 	padding: 25px 20px;
 	text-align: center;
-	background: #68dff0;
+	background: #252831;
 	border-radius: 5px 5px 0 0;
 	-webkit-border-radius: 5px 5px 0 0;
-	color: #fff;
+	color: #32e8ad;
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -2216,7 +2217,7 @@ label {
 
 /*footer*/
 .site-footer {
-    background: #68dff0;
+    background: #094965;
     color: #fff;
     padding: 10px 0;
 }

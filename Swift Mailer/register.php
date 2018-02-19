@@ -8,23 +8,23 @@ function gmailbody()
 require_once 'vendor/autoload.php';
 
 $email_id=$_GET['email'];
-
+$remark=$_GET['remark'];
 echo "$email_id";
 echo "$user_id";
 // Create the Transport
 $transport = (new Swift_SmtpTransport('smtp.sendgrid.net', 465, 'ssl'))
   ->setUsername('apikey')
-  ->setPassword('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')
+  ->setPassword('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')
 ;
 
 // Create the Mailer using your created Transport
 $mailer = new Swift_Mailer($transport);
 
 // Create a message
-$body = "<h1>your complaint has be processed</h1>";
+$body = "<h1>$remark</h1>";
 
 $message = (new Swift_Message("body of the mail"))
-  ->setFrom(['jeraldjacob10@gmail.com' => 'Stop Crime'])
+  ->setFrom(['ajilraju2@gmail.com' => 'Stop Crime'])
   ->setTo([$email_id])
   ->setBody($body)
   ->setContentType('text/html')

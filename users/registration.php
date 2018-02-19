@@ -60,11 +60,11 @@ echo htmlentities($msg);
 		        <div class="login-wrap">
 		         <input type="text" class="form-control" placeholder="Full Name" name="fullname" required="required" autofocus>
 		            <br>
-		            <input type="email" class="form-control" placeholder="User ID (email)" id="email" onBlur="userAvailability()" name="email" required="required">
+		            <input type="email" class="form-control" placeholder="email eg: john@gmail.com" id="email" onBlur="userAvailability()" name="email" required="required">
 		             <span id="user-availability-status1" style="font-size:12px;"></span>
 		            <br>
 		            <input type="password" class="form-control" placeholder="Password" required="required" name="password"><br >
-		             <input type="number" class="form-control" maxlength="10" name="contactno" placeholder="Contact no" required="required" pattern="[789][0-9]{9}" autofocus>
+		             <input type="text" class="form-control" maxlength="10" name="contactno" placeholder="Contact no" required="required" pattern="[789][0-9]{9}" autofocus>
 		            <br>
 		            
 		            <button class="btn btn-theme btn-block"  type="submit" name="submit" id="submit"><i class="fa fa-user"></i> Register</button>
