@@ -14,7 +14,7 @@ echo "$user_id";
 // Create the Transport
 $transport = (new Swift_SmtpTransport('smtp.sendgrid.net', 465, 'ssl'))
   ->setUsername('apikey')
-  ->setPassword('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')
+  ->setPassword('')
 ;
 
 // Create the Mailer using your created Transport
