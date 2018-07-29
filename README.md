@@ -1,2 +1,2 @@
 # cms
-it is a bad project 
+A simple product complaint management system.
